@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>my first site</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body class="MyFirstSiteColor">
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3">
+            </div>
+            <div class="col-6">
+                <h1 class="TestColor"> <var>Film controller</var> </h1>
+                <div class="text-center">
+                    <button type="MyButton2" class="btn btn-primary" onclick="restart()">RESTART</button>
+                    <button type="MyButton2" class="btn btn-success" onclick="ON()">ON</button>
+                    <button type="MyButton2" class="btn btn-danger" onclick="OFF()">OFF</button>
+                </div>
+                <figure class="figure">
+                    <img height="30" widht="20" src="https://i.ytimg.com/vi/HgCMXP0nx74/maxresdefault.jpg" class="figure-img img-fluid rounded" alt="...">
+                </figure>
+
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    function restart() {
+        console.log("hello wo0rld")
+        fetch('api/restart')
+    }
+
+    function ON() {
+        console.log("hello wo0rld")
+        fetch('api/ON')
+    }
+
+    function OFF() {
+        console.log("hello wo0rld")
+        fetch('api/OFF')
+    }
+</script>
+
+</html>
