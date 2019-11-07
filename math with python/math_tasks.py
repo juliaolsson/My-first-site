@@ -6,7 +6,6 @@ print (svar1)
 svar2 = 2 ** 3 + 3 ** 4
 print (svar2)
 
-
 #triangeluppgift
 
 katet1 = 3
